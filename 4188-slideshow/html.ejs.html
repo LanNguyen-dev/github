@@ -1,0 +1,197 @@
+<section class="gt_section-<%=id%> <%=extraClass%>" data-name="<%=name%>">
+  <div class="gt_slidehome">
+    <div class="gt_slidehome-owl">
+      <div class="gt_list-slidehome owl-carousel owl-theme">
+
+        <div class="item" data-index="1">
+          <% if (linkBanner1 != "") { %>
+            <a href="<%=linkBanner1%>">
+          <% } %>
+            <div <%-bgImage({
+              src: imgSlide1,
+              snippet: {
+                attribute: "imgSlide1"
+              },
+              class: "gt_slideshow-image gt_lazyload",
+              size: "70x",
+                attr: {
+                  "data-id": "{{product.image.id}}"
+                }
+              })%> >
+            </div>
+            <div class="gt_flex gt_align-i-center gt_justify-c-center gt_slidehome-caption">
+              <div class="gt_caption-block">
+                <% if (titleSmall1 != ""){ %>
+                <h3 class="gt_subheading gt_mb--medium title_small">
+
+                    <%-text({
+                        text: titleSmall1,
+                        snippet: {
+                            attribute: "titleSmall1"
+                        }
+                    })%>
+                  </h3>
+                <% } %>
+                <% if (titleLager1 != ""){ %>
+                <h2 class="gt_heading gt_mb--medium title_lager">
+
+                      <%-text({
+                          text: titleLager1,
+                          snippet: {
+                              attribute: "titleLager1"
+                          }
+                      })%>
+
+                  </h2>
+                <% } %>
+                <% if (hideshowbutton1) {%>
+                <% if (nameButton1 != ""){ %>
+                  <div class="gt_button btn button color--primary button gt-button-slider  gt-button-slider1">
+                    <%-text({
+                        text: nameButton1,
+                        snippet: {
+                          attribute: "nameButton1"
+                        },
+                    })%>
+                  </div>
+                <% } %>
+                <% } %>
+              </div>
+            </div>
+          <% if (linkBanner1 != "") { %>
+          </a>
+          <% } %>
+        </div>
+
+        <% if(hideshowslide2) { %>
+        <div class="item" data-index="2">
+          <% if (linkBanner2 != "") { %>
+            <a href="<%=linkBanner2%>">
+          <% } %>
+            <div <%-bgImage({
+              src: imgSlide2,
+                snippet: {
+                  attribute: "imgSlide2"
+                },
+              class: "gt_slideshow-image gt_lazyload",
+              size: "70x",
+                attr: {
+                  "data-id": "{{product.image.id}}"
+                }
+              })%> >
+            </div>
+            <div class="gt_flex gt_align-i-center gt_justify-c-center gt_slidehome-caption">
+              <div class="gt_caption-block">
+                <% if (titleSmall2 != ""){ %>
+                <h3 class="gt_subheading gt_mb--medium title_small">
+
+                  <%-text({
+                    text: titleSmall2,
+                    snippet: {
+                      attribute: "titleSmall2"
+                    }
+                  })%>
+
+                  </h3>
+                <% } %>
+                <% if (titleLager2 != ""){ %>
+                <h2 class="gt_heading gt_mb--medium title_lager">
+
+                    <%-text({
+                      text: titleLager2,
+                      snippet: {
+                      attribute: "titleLager2"
+                      }
+                    })%>
+
+                </h2>
+                <% } %>
+                <% if (hideshowbutton2) {%>
+                <% if (nameButton2 != ""){ %>
+                  <div class="gt_button btn button color--primary button gt-button-slider  gt-button-slider2">
+
+                    <%-text({
+                      text: nameButton2,
+                      snippet: {
+                        attribute: "nameButton2"
+                      },
+                    })%>
+
+                  </div>
+                <% } %>
+                <% } %>
+              </div>
+            </div>
+          <% if (linkBanner2 != "") { %>
+          </a>
+          <% } %>
+        </div>
+        <% } %>
+
+        <% if(hideshowslide3) { %>
+        <div class="item" data-index="3">
+          <% if (linkBanner3 != "") { %>
+          <a href="<%=linkBanner3%>">
+          <% } %>
+            <div <%-bgImage({
+              src: imgSlide3,
+                snippet: {
+                  attribute: "imgSlide3"
+                },
+              class: "gt_slideshow-image gt_lazyload",
+              size: "70x",
+                attr: {
+                  "data-id": "{{product.image.id}}"
+                  }
+                })%> >
+            </div>
+            <div class="gt_flex gt_align-i-center gt_justify-c-center gt_slidehome-caption">
+              <div class="gt_caption-block">
+                <% if (titleSmall3 != ""){ %>
+                <h3 class="gt_subheading gt_mb--medium title_small">
+
+                  <%-text({
+                    text: titleSmall3,
+                    snippet: {
+                      attribute: "titleSmall3"
+                    }
+                  })%>
+
+                  </h3>
+                <% } %>
+                <% if (titleLager3 != ""){ %>
+                <h2 class="gt_heading gt_mb--medium title_lager">
+
+                    <%-text({
+                      text: titleLager3,
+                      snippet: {
+                        attribute: "titleLager3"
+                      }
+                    })%>
+
+                  </h2>
+                <% } %>
+                <% if (hideshowbutton3) {%>
+                <% if (nameButton3 != ""){ %>
+                  <div class="gt_button btn button color--primary button gt-button-slider gt-button-slider3">
+                    <%-text({
+                      text: nameButton3,
+                      snippet: {
+                        attribute: "nameButton3"
+                      },
+                    })%>
+                  </div>
+                <% } %>
+                <% } %>
+              </div>
+            </div>
+          <% if (linkBanner3 != "") { %>
+          </a>
+          <% } %>
+        </div>
+        <% } %>
+
+      </div>
+    </div>
+  </div>
+</section>
