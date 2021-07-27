@@ -1,0 +1,36 @@
+<section class="gt_section-<%=id%> <%=extraClass%>" data-name="<%=name%>">
+  <% if(productHandle.handle == "auto") { %>
+		{%- assign product = collections.all.products | first -%}
+	<% } else { %>
+		{%- assign product = all_products["<%=productHandle.handle%>"] -%}
+	<% }%>
+  <div <%-bgImage({
+    src: backgroundImage,
+    snippet: {
+      attribute: "backgroundImage"
+    },
+    class: "gt_banner-bg gt_lazyload",
+    style: "",
+    size: "100x"
+  })%>>
+    <div class="gt_overlay"></div>
+  </div> 
+  <div class="gt_container">
+    <Box class="gt_flex gt_justify--space-between gt_flex-wrap gt_group" attribute="boxContainer">
+      <Box class="gt_text--center gt_box-text" attribute="boxTextGroup">
+        <Box class="gt_flex gt_justify--center gt_box-heading" attribute="boxHeadingText">
+          <Icon attribute="iconBefore" class="gt_text--highlight gt_mr--extra-small gt_icon"></Icon>
+          <Text class="gt_text--white gt_heading" attribute="headingText"></Text>
+          <Icon attribute="iconAfter" class="gt_text--highlight gt_mr--extra-small gt_icon"></Icon>
+        </Box>
+        <Text class="gt_message" attribute="messageText"></Text>
+      </Box>
+      <div class="gt_product-items">
+        <% include "product" %>
+      </div>
+      <div class="gt_product-items">
+        <% include "product" %>
+      </div>
+    </Box>
+  </div>
+</section>

@@ -1,0 +1,104 @@
+.gt_section-<%=id%> {
+  position: relative;
+   <% if (backgroundBanner == "color") { %>
+    background-color: <%=backgroundColor%>;
+  <% } %> 
+}
+
+.gt_section-<%=id%> .gt_banner-bg {
+   <% if (backgroundBanner == "image") { %>  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-position: <%=backgroundPosition%>; 
+   <% } %> 
+}
+
+.gt_section-<%=id%> .gt_banner-bg .gt_overlay {
+   <% if (backgroundBanner == "image") { %>  
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background: <%=overlayColorBackground%>; 
+   <% } %> 
+}
+
+.gt_section-<%=id%> .gt_container {
+  position: relative;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group {
+  padding: 64px 0;
+  margin: 0 -16px;
+  align-items: flex-end;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text .gt_text--white {
+  color: #fff;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text .gt_box-heading {
+  align-items: center;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text .gt_box-heading .gt_icon {
+  margin: 0;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text .gt_box-heading .gt_heading {
+  font-size: 38px;
+  margin-bottom: 0;
+  padding: 0 15px;
+  font-weight: 700;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_box-text .gt_message {
+  font-size: 140px;
+  color: #16EBC0;
+  font-weight: bold;
+  max-height: 130px;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items {
+  width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items .gt_product .gt_product-image {
+  background: #fff;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items .gt_product .gt_product-info {
+  text-align: left;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items .gt_product .gt_product-info .name_product {
+  color: #fff;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items .gt_product .gt_product-info .gt_product-price {
+  justify-content: start;
+}
+
+.gt_section-<%=id%> .gt_container .gt_group .gt_product-items .gt_product .gt_product-info .gt_product-price .gt_product-price--number {
+  font-size: 38px;
+  font-weight: 700;
+  color: #DE172A;
+}
+
+@media (max-width: 576px) {
+  .gt_section-<%=id%> .gt_container .gt_group {
+    display: block !important;
+  }
+}

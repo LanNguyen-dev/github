@@ -1,0 +1,250 @@
+[
+  {
+    "id": "content",
+    "settings": [ 
+      {
+        "id": "background",
+        "title": "Background",
+        "desc": "",
+        "extend": true,
+        "items": [
+          {
+            "id": "backgroundBanner",
+            "attribute": "backgroundBanner",
+            "title": "Background Banner",
+            "reference": "css",
+            "value": "image",
+            "type": "segment",
+            "options": [
+              {
+                "text": "Image",
+                "value": "image"
+              },
+              {
+                "text": "Color",
+                "value": "color"
+              }
+            ],
+            "links": [
+              {
+                "value": "image",
+                "snippet": {
+                  "ids": [
+                    "backgroundImage",
+                    "backgroundPosition",
+                    "overlayColorBackground"
+                  ],
+                  "hide": false
+                }
+              },
+              {
+                "value": "color",
+                "snippet": {
+                  "id": "backgroundColor",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "backgroundImage",
+            "attribute": "backgroundImage",
+            "title": "Background Image",
+            "reference": "html",
+            "type": "imageuploader",
+            "value": "https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/4da0af6e-1df0-4ca7-baf7-131fa5f561d9.png"
+          },
+          {
+            "id": "backgroundPosition",
+            "attribute": "backgroundPosition",
+            "title": "Background Position",
+            "planId": 2,
+            "desc": "",
+            "reference": "css",
+            "value": "center",
+            "type": "select",
+            "options": [
+              {
+                "text": "None",
+                "value": "unset"
+              },
+              {
+                "text": "Center",
+                "value": "center"
+              },
+              {
+                "text": "Top",
+                "value": "top"
+              },
+              {
+                "text": "Bottom",
+                "value": "bottom"
+              },
+              {
+                "text": "Left",
+                "value": "left"
+              },
+              {
+                "text": "Right",
+                "value": "right"
+              }
+            ]
+          },
+          {
+            "id": "backgroundColor",
+            "attribute": "backgroundColor",
+            "title": "Background Color",
+            "desc": "",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "readonly": false,
+            "popup": true,
+            "initial": true,
+            "inherit": "themeBrandColor"
+          },
+          {
+            "id": "overlayColorBackground",
+            "attribute": "overlayColorBackground",
+            "title": "Overlay Color",
+            "planId": 2,
+            "desc": "",
+            "reference": "css",
+            "value": "transparent",
+            "type": "colorpicker",
+            "readonly": false,
+            "popup": true
+          }
+        ]
+      },
+      {
+        "id": "tree",
+        "attribute": "tree",
+        "type": "tree",
+        "reference": "html",
+        "value": [
+          {
+            "attribute": "boxContainer",
+            "atom": "Box",
+            "title": "Container",
+            "advancedMode": true,
+            "planId": 2,
+            "settings": {
+              "hideSettingType": true,
+              "displayType_lg": "row",
+              "displayType_md": "row",
+              "displayType_sm": "row",
+              "displayType_xs": "row"
+            },
+            "children": [
+              {
+                "attribute": "boxTextGroup",
+                "atom": "Box",
+                "title": "Text Group",
+                "settings": {
+                  "displayType_lg": "column",
+                  "displayType_md": "column",
+                  "displayType_sm": "column",
+                  "displayType_xs": "column"
+                },
+                "display": true,
+                "children": [
+                  {
+                    "attribute": "boxHeadingText",
+                    "atom": "Box",
+                    "title": "Box Heading Text",
+                    "settings": {
+                      "displayType_lg": "row",
+                      "displayType_md": "row",
+                      "displayType_sm": "row",
+                      "displayType_xs": "row"
+                    },
+                    "display": true,
+                    "children": [
+                      {
+                        "attribute": "iconBefore",
+                        "atom": "Icon",
+                        "title": "Icon",
+                        "type": "svg",
+                        "value": {
+                          "content": "<svg width=\"30\" height=\"32\" viewBox=\"0 0 30 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\r\n<path d=\"M29.6065 20.5498L25.9585 21.1723L21.7455 18.7398L27.9613 15.9998L21.7468 13.259L25.9585 10.8275L29.6065 11.45L29.9428 9.47877L27.1273 8.99802L28.1188 6.31902L26.2438 5.62477L24.9588 9.09552L20.747 11.527L21.4813 4.77477L15.9998 8.78777V4.56277L18.363 1.71352L16.8248 0.436523L14.9998 2.63502L13.1748 0.436523L11.6365 1.71352L13.9998 4.56177V8.78677L8.52077 4.77477L9.25527 11.5283L5.04102 9.09552L3.75627 5.62477L1.88127 6.31902L2.87227 8.99802L0.0565186 9.47877L0.393018 11.4498L4.04102 10.8273L8.25377 13.2593L2.04077 15.9998L8.25502 18.7393L4.04102 21.172L0.393018 20.5498L0.0565186 22.5208L2.87227 23.0015L1.88052 25.6805L3.75552 26.3748L5.04027 22.904L9.25427 20.471L8.52002 27.223L13.9998 23.212V27.437L11.6365 30.285L13.1755 31.562L15.0005 29.3638L16.8255 31.562L18.3645 30.285L15.9998 27.4365V23.2115L21.4813 27.2243L20.7473 20.4743L24.9583 22.9055L26.2433 26.3763L28.1183 25.682L27.1273 23.0015L29.9428 22.5208L29.6065 20.5498ZM23.0043 15.9998L19.5998 17.4998L16.9998 15.9998L19.5998 14.4983L23.0043 15.9998ZM19.0028 9.06802L18.5998 12.7663L15.9998 14.2678V11.2663L19.0028 9.06802ZM10.9998 9.06827L13.9998 11.2645V14.2678L11.4018 12.7678L10.9998 9.06827ZM6.99802 15.9998L10.3998 14.4998L12.9998 15.9998L10.4015 17.4998L6.99802 15.9998ZM10.9998 22.9298L11.402 19.2318L14.0003 17.7318V20.7335L10.9998 22.9298ZM19.0033 22.9298L15.9998 20.7318V17.7318L18.5998 19.2335L19.0033 22.9298Z\" fill=\"white\"\/>\r\n<\/svg>\r\n",
+                          "type": "svg",
+                          "name": "snow"
+                        },
+                        "settings": {
+                          "linkActive": true
+                        }
+                      },
+                      {
+                        "attribute": "headingText",
+                        "atom": "Text",
+                        "title": "Heading",
+                        "value": "Top Deal"
+                      },
+                      {
+                        "attribute": "iconAfter",
+                        "atom": "Icon",
+                        "title": "Icon",
+                        "type": "svg",
+                        "value": {
+                          "content": "<svg width=\"30\" height=\"32\" viewBox=\"0 0 30 32\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\r\n<path d=\"M29.6065 20.5498L25.9585 21.1723L21.7455 18.7398L27.9613 15.9998L21.7468 13.259L25.9585 10.8275L29.6065 11.45L29.9428 9.47877L27.1273 8.99802L28.1188 6.31902L26.2438 5.62477L24.9588 9.09552L20.747 11.527L21.4813 4.77477L15.9998 8.78777V4.56277L18.363 1.71352L16.8248 0.436523L14.9998 2.63502L13.1748 0.436523L11.6365 1.71352L13.9998 4.56177V8.78677L8.52077 4.77477L9.25527 11.5283L5.04102 9.09552L3.75627 5.62477L1.88127 6.31902L2.87227 8.99802L0.0565186 9.47877L0.393018 11.4498L4.04102 10.8273L8.25377 13.2593L2.04077 15.9998L8.25502 18.7393L4.04102 21.172L0.393018 20.5498L0.0565186 22.5208L2.87227 23.0015L1.88052 25.6805L3.75552 26.3748L5.04027 22.904L9.25427 20.471L8.52002 27.223L13.9998 23.212V27.437L11.6365 30.285L13.1755 31.562L15.0005 29.3638L16.8255 31.562L18.3645 30.285L15.9998 27.4365V23.2115L21.4813 27.2243L20.7473 20.4743L24.9583 22.9055L26.2433 26.3763L28.1183 25.682L27.1273 23.0015L29.9428 22.5208L29.6065 20.5498ZM23.0043 15.9998L19.5998 17.4998L16.9998 15.9998L19.5998 14.4983L23.0043 15.9998ZM19.0028 9.06802L18.5998 12.7663L15.9998 14.2678V11.2663L19.0028 9.06802ZM10.9998 9.06827L13.9998 11.2645V14.2678L11.4018 12.7678L10.9998 9.06827ZM6.99802 15.9998L10.3998 14.4998L12.9998 15.9998L10.4015 17.4998L6.99802 15.9998ZM10.9998 22.9298L11.402 19.2318L14.0003 17.7318V20.7335L10.9998 22.9298ZM19.0033 22.9298L15.9998 20.7318V17.7318L18.5998 19.2335L19.0033 22.9298Z\" fill=\"white\"\/>\r\n<\/svg>\r\n",
+                          "type": "svg",
+                          "name": "snow"
+                        },
+                        "settings": {
+                          "linkActive": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "attribute": "messageText",
+                    "atom": "Text",
+                    "title": "Message",
+                    "value": "70%",
+                    "settings": {
+                      "displayType_lg": "row",
+                      "displayType_md": "row",
+                      "displayType_sm": "row",
+                      "displayType_xs": "row"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "design",
+    "settings": [
+      {
+        "id": "general",
+        "title": "General",
+        "desc": "",
+        "extend": true,
+        "planId": 2,
+        "items": [
+          {
+            "attribute": "productHandle",
+            "desc": "",
+            "id": "productHandle",
+            "reference": "html",
+            "shopify": [
+              "all_products[productHandle]",
+              "collections.all.products"
+            ],
+            "type": "pickproduct",
+            "value": {
+              "id": "auto",
+              "handle": "auto",
+              "title": "Auto"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
