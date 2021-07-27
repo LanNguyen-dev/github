@@ -1,0 +1,798 @@
+[
+  {
+    "id": "content",
+    "settings": [
+      {
+        "id": "changeSlide1",
+        "title": "Slide 1",
+        "desc": "",
+        "items": [
+          {
+            "id": "imgSlide1",
+            "title": "Image Uploader",
+            "desc": "",
+            "attribute": "imgSlide1",
+            "reference": "html",
+            "type": "imageuploader",
+            "value": "https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/8a5d67b2-9c13-4033-8b2f-b75e786bd6e8.jpeg",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='1'] .gt_slideshow-image",
+                "attribute": "src"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "placeholder": "banner-1"
+          }
+        ],
+        "more": [
+          {
+            "id": "titleSmall1",
+            "attribute": "titleSmall1",
+            "title": "Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "MEGA SUMMER SALE",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "titleLager1",
+            "attribute": "titleLager1",
+            "title": "Sub Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "BIG DISCOUNT UP TO 50% (Slide 1)",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkBanner1",
+            "attribute": "linkBanner1",
+            "title": "Slide URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": ""
+          },
+          {
+            "id": "hideshowbutton1",
+            "title": "Button (On/Off)",
+            "desc": "",
+            "attribute": "hideshowbutton1",
+            "reference": "html",
+            "value": true,
+            "type": "switch",
+            "optimals": [
+              {
+                "type": "html:display",
+                "target": "[data-index='1'] .gt_caption-block .btn"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "links": [
+              {
+                "value": true,
+                "snippet": {
+                  "id": "nameButton1",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "linkButton1",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "attribute": "nameButton1",
+            "desc": "",
+            "id": "nameButton1",
+            "language": true,
+            "reference": "html",
+            "title": "Button Text",
+            "type": "input",
+            "value": "START SHOPPING",
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkButton1",
+            "attribute": "linkButton1",
+            "title": "Button URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": "#",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='1'] .gt_caption-block .button",
+                "attribute": "href"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "changeSlide2",
+        "title": "Slide 2",
+        "desc": "",
+        "items": [
+          {
+            "id": "hideshowslide2",
+            "title": "Slide 2 (On/Off)",
+            "desc": "",
+            "attribute": "hideshowslide2",
+            "reference": ["html"],
+            "value": true,
+            "type": "switch",
+            "links": [
+              {
+                "value": true,
+                "snippet": {
+                  "id": "hideshowbutton2",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "imgSlide2",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "titleSmall2",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "titleLager2",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "linkBanner2",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "imgSlide2",
+            "title": "Image Uploader",
+            "desc": "",
+            "attribute": "imgSlide2",
+            "reference": "html",
+            "type": "imageuploader",
+            "value": "https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/8a5d67b2-9c13-4033-8b2f-b75e786bd6e8.jpeg",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='2'] .gt_slideshow-image",
+                "attribute": "src"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "placeholder": "banner-2"
+          }
+        ],
+        "more": [
+          {
+            "id": "titleSmall2",
+            "attribute": "titleSmall2",
+            "title": "Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "SPRING - SUMMER 2018",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "titleLager2",
+            "attribute": "titleLager2",
+            "title": "Sub Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "COLLECTION LOOKBOOK (Slide 2)",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkBanner2",
+            "attribute": "linkBanner2",
+            "title": "Slide URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": ""
+          },
+          {
+            "id": "hideshowbutton2",
+            "title": "Button (On/Off)",
+            "desc": "",
+            "attribute": "hideshowbutton2",
+            "reference": "html",
+            "value": true,
+            "type": "switch",
+            "optimals": [
+              {
+                "type": "html:display",
+                "target": "[data-index='2'] .gt_caption-block .btn"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "links": [
+              {
+                "value": true,
+                "snippet": {
+                  "id": "nameButton2",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "linkButton2",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "attribute": "nameButton2",
+            "desc": "",
+            "id": "nameButton2",
+            "language": true,
+            "reference": "html",
+            "title": "Button Text",
+            "type": "input",
+            "value": "SHOP NOW",
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkButton2",
+            "attribute": "linkButton2",
+            "title": "Button URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": "#",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='2'] .gt_caption-block .button",
+                "attribute": "href"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "changeSlide3",
+        "title": "Slide 3",
+        "desc": "",
+        "items": [
+          {
+            "id": "hideshowslide3",
+            "title": "Slide 3 (On/Off)",
+            "desc": "",
+            "attribute": "hideshowslide3",
+            "reference": ["html"],
+            "value": true,
+            "type": "switch",
+            "links": [
+              {
+                "value": true,
+                "snippet": {
+                  "id": "hideshowbutton3",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "imgSlide3",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "titleSmall3",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "titleLager3",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "linkBanner3",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "id": "imgSlide3",
+            "title": "Image Uploader",
+            "desc": "",
+            "attribute": "imgSlide3",
+            "reference": "html",
+            "type": "imageuploader",
+            "value": "https://d3dfaj4bukarbm.cloudfront.net/staging/images/admin/8a5d67b2-9c13-4033-8b2f-b75e786bd6e8.jpeg",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='3'] .gt_slideshow-image",
+                "attribute": "src"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "placeholder": "banner-1"
+          }
+        ],
+        "more": [
+          {
+            "id": "titleSmall3",
+            "attribute": "titleSmall3",
+            "title": "Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "HOT TRENDING",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "titleLager3",
+            "attribute": "titleLager3",
+            "title": "Sub Heading",
+            "desc": "",
+            "reference": "html",
+            "value": "NEW ARRIVALS COLLECTION (Slide 3)",
+            "type": "textarea",
+            "minHeight": 50,
+            "maxHeight": 200,
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkBanner3",
+            "attribute": "linkBanner3",
+            "title": "Slide URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": ""
+          },
+          {
+            "id": "hideshowbutton3",
+            "title": "Button (On/Off)",
+            "desc": "",
+            "attribute": "hideshowbutton3",
+            "reference": "html",
+            "value": true,
+            "type": "switch",
+            "optimals": [
+              {
+                "type": "html:display",
+                "target": "[data-index='3'] .gt_caption-block .btn"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ],
+            "links": [
+              {
+                "value": true,
+                "snippet": {
+                  "id": "nameButton3",
+                  "hide": false
+                }
+              },
+              {
+                "value": true,
+                "snippet": {
+                  "id": "linkButton3",
+                  "hide": false
+                }
+              }
+            ]
+          },
+          {
+            "attribute": "nameButton3",
+            "desc": "",
+            "id": "nameButton3",
+            "language": true,
+            "reference": "html",
+            "title": "Button Text",
+            "type": "input",
+            "value": "GO TO SHOP",
+            "optimal": {
+              "type": "js:trigger"
+            }
+          },
+          {
+            "id": "linkButton3",
+            "attribute": "linkButton3",
+            "title": "Button URL",
+            "desc": "",
+            "reference": "html",
+            "type": "picklink",
+            "value": "#",
+            "optimals": [
+              {
+                "type": "html:data",
+                "target": "[data-index='3'] .gt_caption-block .button",
+                "attribute": "href"
+              },
+              {
+                "type": "js:trigger"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "design",
+    "settings": [
+      {
+        "id": "customizeGeneral",
+        "title": "General",
+        "desc": "",
+        "items": [
+          {
+            "id": "heightImg",
+            "attribute": "heightImg",
+            "title": "Slide Height",
+            "desc": "",
+            "reference": "css",
+            "value": "500px",
+            "units": ["px"],
+            "type": "range:unit",
+            "min": 50,
+            "max": 1500,
+            "changing": 1,
+            "screens": [
+              {
+                "id": "lg",
+                "value": "500px"
+              },
+              {
+                "id": "md",
+                "value": "450px"
+              },
+              {
+                "id": "sm",
+                "value": "400px"
+              },
+              {
+                "id": "xs",
+                "value": "300px"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "customizeColor",
+        "title": "Colors",
+        "desc": "",
+        "items": [
+          {
+            "id": "overlayColor",
+            "attribute": "overlayColor",
+            "title": "Slide Overlay Color",
+            "desc": "",
+            "reference": "css",
+            "value": "#000",
+            "type": "colorpicker",
+            "readonly": false,
+            "popup": true
+          },
+          {
+            "id": "bgOverlay",
+            "attribute": "bgOverlay",
+            "title": "Slide Overlay Opacity",
+            "desc": "",
+            "reference": "css",
+            "value": "0.3",
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "changing": 0.01
+          },
+          {
+            "attribute": "subheadingColor",
+            "desc": "",
+            "id": "subheadingColor",
+            "language": true,
+            "reference": "css",
+            "title": "Subheading Color",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "inherit": "themeTextColor"
+          },
+          {
+            "attribute": "headingColor",
+            "desc": "",
+            "id": "headingColor",
+            "language": true,
+            "reference": "css",
+            "title": "Heading Color",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "inherit": "themeHeadingColor"
+          }
+        ],
+        "more": [
+          {
+            "id": "bgcolorButton",
+            "title": "Button Background Normal",
+            "desc": "",
+            "attribute": "bgcolorButton",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonBackgroundColor"
+          },
+          {
+            "id": "bgcolorbuttonHover",
+            "title": "Button Background Hover",
+            "desc": "",
+            "attribute": "bgcolorbuttonHover",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonHoverBackgroundColor"
+          },
+          {
+            "id": "colorButtonOutlineNormal",
+            "title": "Button Outline Normal",
+            "desc": "",
+            "attribute": "colorButtonOutlineNormal",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonBorderColor"
+          },
+          {
+            "id": "colorButtonOutlineHover",
+            "title": "Button Outline Hover",
+            "desc": "",
+            "attribute": "colorButtonOutlineHover",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonHoverBorderColor"
+          },
+          {
+            "id": "colorButtonTextNormal",
+            "title": "Button Text Normal",
+            "desc": "",
+            "attribute": "colorButtonTextNormal",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonColor"
+          },
+          {
+            "id": "colorButtonTextHover",
+            "title": "Button Text Hover",
+            "desc": "",
+            "attribute": "colorButtonTextHover",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonHoverColor"
+          },
+          {
+            "id": "colorButtonNavigation",
+            "title": "Button Navigation Color",
+            "desc": "",
+            "attribute": "colorButtonNavigation",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonColor"
+          },
+          {
+            "id": "bgcolorButtonNavigation",
+            "title": "Button Navigation Background Color",
+            "desc": "",
+            "attribute": "bgcolorButtonNavigation",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonBackgroundColor"
+          },
+          {
+            "id": "bordercolorButtonNavigation",
+            "title": "Button Navigation Border Color",
+            "desc": "",
+            "attribute": "bordercolorButtonNavigation",
+            "reference": "css",
+            "value": "#fff",
+            "type": "colorpicker",
+            "popup": true,
+            "initial": true,
+            "inherit": "themeButtonBorderColor"
+          }
+        ]
+      },
+      {
+        "id": "customizeTypography",
+        "title": "Typography",
+        "desc": "",
+        "items": [
+          {
+            "attribute": "sizetitleSmall",
+            "desc": "",
+            "id": "sizetitleSmall",
+            "title": "Subheading Font Size",
+            "reference": "css",
+            "value": "20px",
+            "units": ["px"],
+            "type": "input:unit",
+            "screens": [
+              {
+                "id": "lg",
+                "value": "20px"
+              },
+              {
+                "id": "md",
+                "value": "18px"
+              },
+              {
+                "id": "sm",
+                "value": "16px"
+              },
+              {
+                "id": "xs",
+                "value": "13px"
+              }
+            ],
+            "initial": true,
+            "inherit": "themeSubHeadingFontSize"
+          },
+          {
+            "attribute": "sizetitleSLager",
+            "desc": "",
+            "id": "sizetitleSLager",
+            "title": "Heading Font Size",
+            "reference": "css",
+            "value": "50px",
+            "units": ["px"],
+            "type": "input:unit",
+            "screens": [
+              {
+                "id": "lg",
+                "value": "50px"
+              },
+              {
+                "id": "md",
+                "value": "48px"
+              },
+              {
+                "id": "sm",
+                "value": "35px"
+              },
+              {
+                "id": "xs",
+                "value": "24px"
+              }
+            ],
+            "initial": true,
+            "inherit": "themeHeadingFontSize"
+          },
+          {
+            "attribute": "buttonFontsize",
+            "desc": "",
+            "id": "buttonFontsize",
+            "title": "Button Font Size",
+            "reference": "css",
+            "value": "18px",
+            "units": ["px"],
+            "type": "input:unit",
+            "screens": [
+              {
+                "id": "lg",
+                "value": "18px"
+              },
+              {
+                "id": "md",
+                "value": "17px"
+              },
+              {
+                "id": "sm",
+                "value": "16px"
+              },
+              {
+                "id": "xs",
+                "value": "13px"
+              }
+            ],
+            "inherit": "themeButtonFontSize"
+          }
+        ]
+      }
+    ]
+  }
+]
